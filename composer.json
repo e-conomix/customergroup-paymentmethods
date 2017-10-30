@@ -1,7 +1,7 @@
 {
     "name": "e-conomix/customergroup-paymentmethod",
     "type": "magento-module",
-    "license": "MIT",
+    "license": "GPL-3.0",
     "description": "Adds possibility to de-/activate payment methods by customer group",
     "authors": [
         {
