@@ -1,0 +1,20 @@
+image: economix/cirunner:magento-eqp
+# Magento Extension Quality Program Coding Standard
+#
+# see https://github.com/magento/marketplace-eqp
+#
+# To make sure, your extension will pass CodeSniffer checks on Level 1 of Magento Marketplace Technical Review, you could run
+# phpcs command with --severity=10 option.
+#
+# $ vendor/bin/phpcs /path/to/your/extension --standard=MEQP2 --severity=10
+# All severity 10 errors must be fixed in order to successfully pass Level 1 CodeSniffer checks.
+stages:
+ - eqp
+eqp-job:
+ stage: eqp
+ when: always
+ only:
+ - master
+ script:
+ - cd /data/eqp
+ - vendor/bin/phpcs $CI_PROJECT_DIR --standard=MEQP1 --severity=10 --extensions=php,phtml
