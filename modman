@@ -1,0 +1,3 @@
+app/code/community/Economix/CustomerGroupPaymentMethod/ app/code/community/Economix/CustomerGroupPaymentMethod
+app/etc/modules/Economix_CustomerGroupPaymentMethod.xml app/etc/modules/Economix_CustomerGroupPaymentMethod.xml
+app/locale/de_DE/Economix_CustomerGroupPaymentMethod.csv app/locale/de_DE/Economix_CustomerGroupPaymentMethod.csv

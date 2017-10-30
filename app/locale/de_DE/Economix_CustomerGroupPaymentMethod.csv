@@ -1,0 +1,5 @@
+"Payment Methods","Zahlungsarten"
+"Disable default methods","Standard-Zahlungsarten deaktivieren"
+"""Yes"" will disable all default enabled payment methods, enabling <b>only</b> following selected payment methods","""Ja"" deaktiviert alle standardmäßig aktivierten Zahlungsarten und aktiviert <b>nur</b> nachfolgend ausgewählte Zahlungsarten"
+"Available Methods","Verfügbare Zahlungsarten"
+"Select available payment methods for this group<br /><b>ATTENTION:</b> Selected methods have to be configured in System / Configuration / Sales / Payment Methods","Wählen Sie die Zahlungsarten, die für diese Gruppe verfügbar sein sollen<br /><b>ACHTUNG:</b> Die gewählten Methoden müssen unter System / Konfiguration / Verkauf / Zahlungsarten konfiguriert sein"
