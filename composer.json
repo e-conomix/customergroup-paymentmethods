@@ -1,0 +1,15 @@
+{
+    "name": "e-conomix/customergroup-paymentmethod",
+    "type": "magento-module",
+    "license": "MIT",
+    "description": "Adds possibility to de-/activate payment methods by customer group",
+    "authors": [
+        {
+            "name": "Dipl.-Ing. Andreas Schrammel",
+            "email": "schrammel@e-conomix.at"
+        }
+    ],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
