@@ -10,17 +10,22 @@ $installer = $this;
 
 $installer->startSetup();
 
-$conn->addColumn($installer->getTable('customer/customer_group'),
-    'economix_customergroup_paymentmethod_disable_default_methods', array(
+$conn->addColumn(
+    $installer->getTable('customer/customer_group'),
+    'economix_customergroup_paymentmethod_disable_default_methods',
+    array(
         'type'     => Varien_Db_Ddl_Table::TYPE_INTEGER,
         'unsigned' => true,
         'nullable' => false,
         'default'  => '0',
         'comment'  => 'Disable default enabled payment methods'
-    ));
+    )
+);
 
 $conn->createTable(
-    $this->getConnection()->newTable($this->getTable('economix_customergrouppaymentmethod/economix_customergroup_paymentmethod'))
+    $this->getConnection()->newTable(
+        $this->getTable('economix_customergrouppaymentmethod/economix_customergroup_paymentmethod')
+    )
         ->addColumn(
             'id',
             Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -33,7 +38,8 @@ $conn->createTable(
         )
         ->addColumn(
             'customer_group_id',
-            Varien_Db_Ddl_Table::TYPE_INTEGER, null,
+            Varien_Db_Ddl_Table::TYPE_INTEGER,
+            null,
             array(
                 'nullable' => false,
                 'unsigned' => true,
@@ -42,7 +48,8 @@ $conn->createTable(
         )
         ->addColumn(
             'payment_method_code',
-            Varien_Db_Ddl_Table::TYPE_TEXT, 255,
+            Varien_Db_Ddl_Table::TYPE_TEXT,
+            255,
             array(
                 'nullable' => false,
             ),
@@ -71,6 +78,5 @@ $conn->createTable(
         )
         ->setComment('Bind payment method to user group')
 );
-
 
 $installer->endSetup();

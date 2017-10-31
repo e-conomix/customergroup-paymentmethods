@@ -22,7 +22,7 @@ class Economix_CustomerGroupPaymentMethod_Helper_Data extends Mage_Core_Helper_A
         $paymentMethods = Mage::getModel('payment/config')->getAllMethods();
         
         $methodList = array();
-        foreach ($paymentMethods as $paymentCode => $paymentMethod) {
+        foreach (array_keys($paymentMethods) as $paymentCode) {
             $paymentTitle = Mage::getStoreConfig('payment/' . $paymentCode . '/title');
             $methodList[] = array('value' => $paymentCode, 'label' => $this->__($paymentTitle));
         }

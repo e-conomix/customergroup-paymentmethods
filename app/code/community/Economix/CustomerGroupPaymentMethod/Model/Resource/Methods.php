@@ -7,10 +7,8 @@
  */
 class Economix_CustomerGroupPaymentMethod_Model_Resource_Methods extends Mage_Core_Model_Resource_Db_Abstract
 {
-    
     protected function _construct()
     {
         $this->_init('economix_customergrouppaymentmethod/economix_customergroup_paymentmethod', 'id');
     }
-    
 }

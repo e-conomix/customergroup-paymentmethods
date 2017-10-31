@@ -18,7 +18,6 @@ class Economix_CustomerGroupPaymentMethod_Model_Observer extends Mage_Core_Model
         $disableDefault = Mage::app()->getRequest()
             ->getParam('economix_customergroup_paymentmethod_disable_default_methods');
         $customerGroup->setEconomixCustomergroupPaymentmethodDisableDefaultMethods($disableDefault);
-        
     }
     
     /**
