@@ -1,4 +1,6 @@
 # E-CONOMIX: Customergroup Paymentmethods
+[![Maintainability](https://api.codeclimate.com/v1/badges/b7c9efdd11dbfa2a3376/maintainability)](https://codeclimate.com/github/e-conomix/customergroup-paymentmethods/maintainability)
+
 The E-CONOMIX "Customergroup Paymentmethods" extension provides the possibility to enable payment methods only for specific customer groups.
 
 ## Installation
