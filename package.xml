@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Economix_Customergroup_Paymentmethods</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GPL-3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>E-CONOMIX Customergroup Paymentmethods enables the user to define payment methods per customer group.</summary>
+    <description>E-CONOMIX Customergroup Paymentmethods adds an additional tab to customer group administration. There it is possible to set paymentmehtods by customergroup - either additional to the default methods or by disabling default methods and only enable those for the group.</description>
+    <notes>Initial release</notes>
+    <authors><author><name>E-CONOMIX GmbH</name><user>ebiz_architects</user><email>office@e-conomix.at</email></author></authors>
+    <date>2017-11-16</date>
+    <time>12:08:46</time>
+    <contents><target name="magecommunity"><dir name="Economix"><dir name="CustomerGroupPaymentMethod"><dir name="Block"><dir name="Adminhtml"><dir name="Customer"><dir name="Group"><dir name="Edit"><file name="Form.php" hash="04d4dc492c2c56cf8c6bf933dbf58bec"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="90da2bc003c61f36e305d12a7085127e"/></dir><dir name="Model"><file name="Methods.php" hash="c80a397fdbde8e9c0b5655a4f913405e"/><file name="Observer.php" hash="44336c50d5043d4002dc7f9764d2aa20"/><dir name="Resource"><dir name="Methods"><file name="Collection.php" hash="de98e0109fdc5cbfc46841003e239fd1"/></dir><file name="Methods.php" hash="561e06e28a17e7be6934ef9b778b469c"/><file name="Setup.php" hash="8fd5b3dafbf2f895d3f5052958ae9ab2"/></dir></dir><dir name="etc"><file name="config.xml" hash="f4f104a3aaaa5784e57e7cf74e2a0e1b"/></dir><dir name="sql"><dir name="economix_customergrouppaymentmethod_setup"><file name="install-0.1.0.php" hash="44cbffbcee2f1d97589057538768841b"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.6.0</min><max>7.1.0</max></php></required></dependencies>
+</package>
